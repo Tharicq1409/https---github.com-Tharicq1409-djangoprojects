@@ -1,0 +1,15 @@
+<html>
+    {% load static %}
+    <head>
+        <title>modeldemo</title>
+    </head>
+    <body>
+        <ul>
+            {% for per in person %}
+                <li>{{ per.first_name  }}{{per.last_name}}</li>
+                <li>{{per.last_name}}</li>
+            {% endfor %}
+            </ul>
+            
+    </body>
+</html>
