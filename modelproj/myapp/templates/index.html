@@ -4,12 +4,31 @@
         <title>modeldemo</title>
     </head>
     <body>
-        <ul>
+        <!--<ul>
             {% for per in person %}
                 <li>{{ per.first_name  }}{{per.last_name}}</li>
                 <li>{{per.last_name}}</li>
             {% endfor %}
-            </ul>
+            </ul>-->
+            <table>
+                <thead>
+                  <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for per in person %}
+                  <tr>
+                    <td>{{ per.first_name }}</td>
+                    <td>{{ per.last_name }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
             
     </body>
 </html>
+
+
+  
