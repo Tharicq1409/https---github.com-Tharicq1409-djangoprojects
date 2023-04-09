@@ -1,7 +1,10 @@
 <html>
     <title>demo</title>
+    {% load static %} <!--static files syntax-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <body>
         <h1>sample template lesson</h1>
-        {{display_date}}
+        {{display_date}} <br>
+        <img src="{% static 'images/GitHublogo.png' %}" alt="My image">        
     </body>
 </html>
