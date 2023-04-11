@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>detailspage</title>
+    </head>
+    <body>
+        <ul>
+            {% for employee in employees %}
+                <li>{{ employee.name }} - {{ employee.email }} - {{ employee.hire_date }} - {{ employee.department }}</li>
+            {% empty %}
+                <li>No employees found.</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
